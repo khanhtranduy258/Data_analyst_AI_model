@@ -17,7 +17,7 @@ def show_info_dataset(dataset_name, df):
     print(df.head())
     print("-"*50)
 
-# show information udemy courses dataset
+#show information udemy courses dataset
 show_info_dataset("udemy courses", df_udemy_course)
 #show information online courses dataset
 show_info_dataset("online courses", df_online_course)
