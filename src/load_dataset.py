@@ -5,7 +5,7 @@ import pandas as pd
 #read file
 df_udemy_course = pd.read_csv("D:/Code/Python/Project/data/raw/udemy_courses.csv")
 df_online_course = pd.read_csv("D:/Code/Python/Project/data/raw/Online_courses.csv")
-# show information udemy dataset
+# show information udemy courses dataset
 print("Udemy courses dataset: ")
 print("_"*50)
 print("Shape: ", df_udemy_course.shape)
@@ -16,7 +16,7 @@ print("_"*50)
 print("Data: ")
 print(df_udemy_course)
 print("="*50)
-#show information online dataset
+#show information online courses dataset
 print("Online courses dataset: ")
 print("_"*50)
 print("Shape: ", df_online_course.shape)
