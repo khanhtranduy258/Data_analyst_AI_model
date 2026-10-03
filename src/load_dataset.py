@@ -5,24 +5,22 @@ import pandas as pd
 #read file
 df_udemy_course = pd.read_csv("D:/Code/project_code/Project/data/raw/udemy_courses.csv")
 df_online_course = pd.read_csv("D:/Code/project_code/Project/data/raw/Online_Courses.csv")
+df_user_enrollment = pd.read_csv("D:/Code/project_code/Project/data/raw/user_enrollments.csv")
+
+def show_info_dataset(dataset_name, df):
+    print("tên dataset:", dataset_name)
+    print(f"số dòng: {df.shape[0]}")
+    print(f"số cột: {df.shape[1]}")
+    print("tên cột: ")
+    print(df.columns.tolist())
+    print("5 dòng đầu tiên của dataset: ")
+    print(df.head())
+    print("-"*50)
+
 # show information udemy courses dataset
-print("Udemy courses dataset: ")
-print("_"*50)
-print("Shape: ", df_udemy_course.shape)
-print("_"*50)
-print("Columns name: ")
-print(df_udemy_course.columns.tolist())
-print("_"*50)
-print("Data: ")
-print(df_udemy_course)
-print("="*50)
+show_info_dataset("udemy courses", df_udemy_course)
 #show information online courses dataset
-print("Online courses dataset: ")
-print("_"*50)
-print("Shape: ", df_online_course.shape)
-print("_"*50)
-print("Columns name: ")
-print(df_online_course.columns.tolist())
-print("_"*50)
-print("Data:")
-print(df_online_course)
+show_info_dataset("online courses", df_online_course)
+#show information user enrollment dataset
+show_info_dataset("user enrollment", df_user_enrollment)
+
