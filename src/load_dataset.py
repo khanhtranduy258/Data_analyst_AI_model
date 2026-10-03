@@ -3,8 +3,8 @@
 
 import pandas as pd
 #read file
-df_udemy_course = pd.read_csv("D:/Code/Python/Project/data/raw/udemy_courses.csv")
-df_online_course = pd.read_csv("D:/Code/Python/Project/data/raw/Online_courses.csv")
+df_udemy_course = pd.read_csv("D:/Code/project_code/Project/data/raw/udemy_courses.csv")
+df_online_course = pd.read_csv("D:/Code/project_code/Project/data/raw/Online_Courses.csv")
 # show information udemy courses dataset
 print("Udemy courses dataset: ")
 print("_"*50)
